@@ -1,0 +1,5 @@
+/config.js
+/node_modules
+/setupJest.js
+/webpack.config.js
+/package-lock.json

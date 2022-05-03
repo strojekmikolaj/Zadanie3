@@ -1,0 +1,41 @@
+{
+  "name": "js-testing-introduction",
+  "version": "1.0.0",
+  "description": "An introduction to JS testing",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack app.js --mode development --watch",
+    "test": "jest"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "testing",
+    "jest",
+    "unit",
+    "tests",
+    "integration",
+    "tests",
+    "e2e",
+    "tests"
+  ],
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": [
+      "jest-localstorage-mock",
+      "./setupJest.js"
+    ]
+  },
+  "author": "Maximilian Schwarzmüller/ Academind GmbH",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
